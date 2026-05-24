@@ -1,4 +1,4 @@
-# AI GitHub Project Analyzer (No API Key Required)
+# AI GitHub Project Analyzer 
 
 Analyze any public GitHub repository instantly — no API key needed!
 
