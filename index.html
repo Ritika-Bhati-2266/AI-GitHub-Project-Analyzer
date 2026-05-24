@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI GitHub Project Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="ti ti-brand-github"></i> AI GitHub Project Analyzer</h1>
+      <p>Enter any public GitHub repo URL to get an AI-powered analysis</p>
+    </div>
+
+    <div class="input-row">
+      <input type="text" id="repoUrl" placeholder="https://github.com/owner/repository" />
+      <button onclick="analyzeRepo()"><i class="ti ti-search"></i> Analyze</button>
+    </div>
+
+    <div class="options-row">
+      <button class="opt-btn active" data-mode="overview" onclick="setMode(this)">Overview</button>
+      <button class="opt-btn" data-mode="readme" onclick="setMode(this)">README</button>
+      <button class="opt-btn" data-mode="structure" onclick="setMode(this)">Code Structure</button>
+      <button class="opt-btn" data-mode="improvements" onclick="setMode(this)">Improvements</button>
+      <button class="opt-btn" data-mode="tech" onclick="setMode(this)">Tech Stack</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <span id="loadingText">Fetching repository data...</span>
+    </div>
+
+    <div id="errorBox" class="error hidden"></div>
+    <div id="metricsGrid" class="metrics-grid hidden"></div>
+    <div id="resultsArea"></div>
+
+    <div id="askSection" class="hidden">
+      <div class="ask-row">
+        <input type="text" id="askInput" placeholder="Ask anything about this repo..." onkeydown="if(event.key==='Enter') askQuestion()" />
+        <button onclick="askQuestion()"><i class="ti ti-message"></i> Ask</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
