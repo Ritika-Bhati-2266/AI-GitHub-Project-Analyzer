@@ -1,34 +1,81 @@
-# AI GitHub Project Analyzer
+# 🔍 AI GitHub Project Analyzer
 
-An AI-powered web app that analyzes any public GitHub repository and gives
-insights about its structure, code quality, and activity.
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-🔗 **Live Demo:** [add link]
+Paste any public GitHub repository link and get an AI-powered analysis of
+its structure, tech stack, and overall quality, in seconds.
 
-## Features
-- Analyze a repository by pasting its GitHub URL
-- [AI-generated summary of the project]
-- [Languages, commits, contributors overview]
-- [Suggestions for improvement]
+## ✨ Features
 
-## Tech Stack
-- Frontend: React (Create React App)
-- Backend: [Node.js / Express / etc.]
-- AI: [OpenAI / Gemini / etc.]
-- APIs: GitHub REST API
+- Analyze any public repository using its GitHub URL
+- AI-generated project summary and insights
+- Overview of languages, commits, and contributors
+- Suggestions to improve code quality and documentation
+- Clean, responsive React interface
 
-## Getting Started
-1. Clone the repo
-   git clone https://github.com/Ritika-Bhati-2266/AI-GitHub-Project-Analyzer.git
-2. Install dependencies
-   npm install
-3. Create a `.env` file (see `.env.example`)
-4. Run the app
-   npm start
+## ⚙️ How It Works
 
-## Screenshots
-[Add screenshots here]
+1. User enters a GitHub repository URL
+2. The app fetches repository data using the GitHub REST API
+3. The data is sent to an AI model for analysis
+4. Results are displayed in a simple, readable dashboard
 
-## Future Improvements
-- Support for private repositories
-- Better handling of GitHub API rate limits
+## 🛠️ Tech Stack
+
+| Layer    | Technology                 |
+| -------- | -------------------------- |
+| Frontend | React (Create React App)   |
+| Backend  | Node.js / Express          |
+| AI       | OpenAI / Gemini API        |
+| Data     | GitHub REST API            |
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 16 or above
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/Ritika-Bhati-2266/AI-GitHub-Project-Analyzer.git
+cd AI-GitHub-Project-Analyzer
+npm install
+```
+
+### Run locally
+
+```bash
+npm start
+```
+
+The app will open at http://localhost:3000
+
+## 📁 Project Structure
+
+```
+AI-GitHub-Project-Analyzer/
+├── public/        # Static files
+├── src/           # React components and app logic
+├── package.json
+└── README.md
+```
+
+## 🗺️ Roadmap
+
+- [ ] Support for private repositories
+- [ ] Handle GitHub API rate limits
+- [ ] Add charts for language and commit stats
+- [ ] Export analysis as PDF
+
+## 🤝 Contributing
+
+Contributions are welcome! Open an issue first to discuss what you'd like
+to change, then submit a pull request.
+
+## 👩‍💻 Author
+
+**Ritika Bhati**
+GitHub: [@Ritika-Bhati-2266](https://github.com/Ritika-Bhati-2266)
