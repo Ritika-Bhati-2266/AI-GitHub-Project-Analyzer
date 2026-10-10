@@ -1,81 +1,91 @@
-# 🔍 AI GitHub Project Analyzer
+# AI GitHub Project Analyzer
 
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+> Understand any GitHub repository in seconds, powered by AI.
 
-Paste any public GitHub repository link and get an AI-powered analysis of
-its structure, tech stack, and overall quality, in seconds.
+## 📌 Overview
 
-## ✨ Features
+Reading through an unfamiliar repository to understand what it does, how good
+the code is, and where it can improve takes time. **AI GitHub Project Analyzer**
+solves this: paste a repository link and get a clear, AI-generated report.
 
-- Analyze any public repository using its GitHub URL
-- AI-generated project summary and insights
-- Overview of languages, commits, and contributors
-- Suggestions to improve code quality and documentation
-- Clean, responsive React interface
+## 🎯 Who Is It For?
 
-## ⚙️ How It Works
+- **Developers** exploring open-source projects
+- **Students** reviewing their own or others' projects
+- **Recruiters and mentors** who want a quick view of a candidate's repository
 
-1. User enters a GitHub repository URL
-2. The app fetches repository data using the GitHub REST API
-3. The data is sent to an AI model for analysis
-4. Results are displayed in a simple, readable dashboard
+## ✨ Key Features
 
-## 🛠️ Tech Stack
+| Feature               | Description                                       |
+| --------------------- | ------------------------------------------------- |
+| Repository analysis   | Fetches repo details through the GitHub REST API  |
+| AI summary            | Explains what the project does in plain language  |
+| Tech stack detection  | Shows languages and tools used                    |
+| Improvement tips      | Suggests fixes for code quality and documentation |
 
-| Layer    | Technology                 |
-| -------- | -------------------------- |
-| Frontend | React (Create React App)   |
-| Backend  | Node.js / Express          |
-| AI       | OpenAI / Gemini API        |
-| Data     | GitHub REST API            |
+## 🖥️ Usage
 
-## 🚀 Getting Started
+1. Open the app
+2. Paste a public repository URL, for example:
+   `https://github.com/facebook/react`
+3. Click **Analyze**
+4. Read the generated report
 
-### Prerequisites
-- Node.js 16 or above
-- npm
+## 🧰 Built With
 
-### Installation
+- React (Create React App)
+- GitHub REST API
+- AI model API (OpenAI / Gemini)
+- Backend: Node.js / Express
+
+## ⚡ Quick Start
 
 ```bash
+# Clone the repository
 git clone https://github.com/Ritika-Bhati-2266/AI-GitHub-Project-Analyzer.git
+
+# Move into the project folder
 cd AI-GitHub-Project-Analyzer
+
+# Install dependencies
 npm install
-```
 
-### Run locally
-
-```bash
+# Start the development server
 npm start
 ```
 
-The app will open at http://localhost:3000
+Open http://localhost:3000 in your browser.
 
-## 📁 Project Structure
+## 🔐 Environment Variables
+
+Create a `.env` file in the root folder and add your own keys:
 
 ```
-AI-GitHub-Project-Analyzer/
-├── public/        # Static files
-├── src/           # React components and app logic
-├── package.json
-└── README.md
+REACT_APP_API_URL=
+REACT_APP_GITHUB_TOKEN=
 ```
 
-## 🗺️ Roadmap
+> Never commit your real API keys. `.env` is already ignored through `.gitignore`.
 
-- [ ] Support for private repositories
-- [ ] Handle GitHub API rate limits
-- [ ] Add charts for language and commit stats
-- [ ] Export analysis as PDF
+## ❓ FAQ
 
-## 🤝 Contributing
+**Does it work with private repositories?**
+Not yet. Only public repositories are supported right now.
 
-Contributions are welcome! Open an issue first to discuss what you'd like
-to change, then submit a pull request.
+**Why do I sometimes get an error?**
+The GitHub API has rate limits. Wait a few minutes and try again.
+
+## 🛣️ Future Plans
+
+- [ ] Private repository support
+- [ ] Charts for languages and commit activity
+- [ ] Downloadable PDF report
+- [ ] Compare two repositories
 
 ## 👩‍💻 Author
 
 **Ritika Bhati**
-GitHub: [@Ritika-Bhati-2266](https://github.com/Ritika-Bhati-2266)
+[GitHub](https://github.com/Ritika-Bhati-2266)
+
+---
+⭐ If you like this project, consider giving it a star!
